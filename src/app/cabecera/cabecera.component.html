@@ -1,0 +1,12 @@
+<header>
+    <nav id="navHome">
+        <svg [routerLink]="'/'" class="SVGInline-svg gridViewBreadCrumbIcon-cqcNX-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><defs><style>.a1,.b1,.d1{fill:#8e8e8e;}.a1,.b1{stroke:#8e8e8e;stroke-width:1.2px;}.a1{opacity:0;}.c1{stroke:none;}</style></defs><g class="a1"><rect class="c1" width="16" height="16"></rect><rect class="d1" x="0.6" y="0.6" width="14.8" height="14.8"></rect></g><g class="b1" transform="translate(0.889 0.889)"><rect class="c1" width="6.222" height="6.222" rx="0.5"></rect><rect class="d1" x="0.6" y="0.6" width="5.022" height="5.022" rx="0.1"></rect></g><g class="b1" transform="translate(8.889 0.889)"><rect class="c1" width="6.222" height="6.222" rx="0.5"></rect><rect class="d1" x="0.6" y="0.6" width="5.022" height="5.022" rx="0.1"></rect></g><g class="b1" transform="translate(0.889 8.889)"><rect class="c1" width="6.222" height="6.222" rx="0.5"></rect><rect class="d1" x="0.6" y="0.6" width="5.022" height="5.022" rx="0.1"></rect></g><g class="b1" transform="translate(8.889 8.889)"><rect class="c1" width="6.222" height="6.222" rx="0.5"></rect><rect class="d1" x="0.6" y="0.6" width="5.022" height="5.022" rx="0.1"></rect></g></svg>
+        <span [routerLink]="'/'">containers-test</span>
+        <div class="seccionesNavContainer" *ngIf="isInBlock">
+            <div class="seccionesNav" *ngFor="let blc of block">
+                <span>></span>
+                <span>{{blc}}</span>
+            </div>
+        </div>
+    </nav>
+</header>

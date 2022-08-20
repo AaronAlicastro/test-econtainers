@@ -1,0 +1,29 @@
+#blocksView {
+    padding: 30px;
+    box-sizing: border-box;
+}
+.blocksCards {
+    width: 200px;
+    height: 260px;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+.blocksCards:hover {
+    outline: 1px solid rgb(56, 42, 255);
+}
+.containerIMG {
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.containerIMG > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.containerBlockName {
+    padding: 9px 12px 0 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+}

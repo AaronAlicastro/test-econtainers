@@ -1,0 +1,44 @@
+<div id="homeContainerPrincipal">
+    <div class="homeContainerSecundario">
+        <div class="imageContainer"><img src="../../assets/devIcon.png" alt="dev icon"></div>
+        <form id="formBusquedaHeros" (submit)="findByName()">
+            <div>
+                <input type="text" name="name" placeholder="Buscar personaje" [(ngModel)]="busqueda">
+                <button></button>
+            </div>
+        </form>
+        <div class="cardsContainerHero" *ngIf="verHero.no">
+            <div *ngFor="let hero of twentyHeros">
+                <div class="heroCards" (click)="clickOnHero(hero)">
+                    <div><img src={{hero.images.xs}} alt="Hero"></div>
+                    <div>
+                        <h2>{{ hero.name }}</h2>
+                        <ul>
+                            <li>Inteligence <span>{{ hero.powerstats.intelligence }}</span></li>
+                            <li>Speed <span>{{ hero.powerstats.speed }}</span></li>
+                            <li>Power <span>{{ hero.powerstats.power }}</span></li>
+                            <li>Gender <span>{{ hero.appearance.gender }}</span></li>
+                            <li>Race <span>{{ hero.appearance.race }}</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="verUnPersonaje" *ngIf="verHero.si">
+            <div><img src={{viewHero.images.xs}} alt="a hero"></div>
+            <ul>
+                <li>Full name: <span>{{ viewHero.biography.fullName }}</span></li>
+                <li>Slug: <span>{{ viewHero.slug }}</span></li>
+                <li>Inteligence: <span>{{ viewHero.powerstats.intelligence }}</span></li>
+                <li>Speed: <span>{{ viewHero.powerstats.speed }}</span></li>
+                <li>Power: <span>{{ viewHero.powerstats.power }}</span></li>
+                <li>Durability: <span>{{ viewHero.powerstats.durability }}</span></li>
+                <li>Gender: <span>{{ viewHero.appearance.gender }}</span></li>
+                <li>Race: <span>{{ viewHero.appearance.race }}</span></li>
+                <li>Occupation: <span>{{ viewHero.work.occupation }}</span></li>
+                <li>Base: <span>{{ viewHero.work.base }}</span></li>
+            </ul>
+        </div>
+        <div class="imageContainer"><img src="../../assets/devIcon.png" alt="dev icon"></div>
+    </div>
+</div>
