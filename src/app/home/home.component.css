@@ -33,7 +33,11 @@
     box-sizing: border-box;
     border: 1px solid #aaa;
     border-radius: 2px;
-    box-shadow: 2px 2px 1px 1px rgb(195, 195, 195);
+    box-shadow: .5px .5px 1px 1px #e0e0e0,
+                -.5px -.5px 1px 1px #e0e0e0;
+}
+#formBusquedaHeros > div:hover {
+    outline: 1px solid rgb(56, 42, 255);
 }
 #formBusquedaHeros > div > input {
     flex-grow: 1;
