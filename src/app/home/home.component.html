@@ -1,6 +1,6 @@
 <div id="homeContainerPrincipal">
     <div class="homeContainerSecundario">
-        <div class="imageContainer"><img src="../../assets/heroIcon.png" alt="dev icon"></div>
+        <div class="imageContainer"><img src="{{url_app}}/assets/heroIcon.png" alt="dev icon"></div>
         <form id="formBusquedaHeros" (submit)="findByName()">
             <div>
                 <input type="text" name="name" placeholder="Buscar personaje" [(ngModel)]="busqueda">
@@ -39,6 +39,6 @@
                 <li>Base: <span>{{ viewHero.work.base }}</span></li>
             </ul>
         </div>
-        <div class="imageContainer"><img src="../../assets/heroIcon.png" alt="dev icon"></div>
+        <div class="imageContainer"><img src="{{url_app}}/assets/heroIcon.png" alt="dev icon"></div>
     </div>
 </div>

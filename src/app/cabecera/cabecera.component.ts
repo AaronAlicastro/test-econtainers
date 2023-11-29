@@ -20,9 +20,9 @@ export class CabeceraComponent implements OnInit {
         this.isInBlock = false;
       } else {
         this.isInBlock = true;
-        this.block = e["url"].replace("/", "").trim().split("/").map((pl:any) => {
+        this.block = e["url"].replace("/", "").trim().split("/").map((pl: any) => {
           return pl.replaceAll("$", " ");
-        });
+        }).filter((pl: any) => pl != "block-page");
       }
     });
   }

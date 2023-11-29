@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../interfaces/hero';
-import { ServiceApiHeroService } from '../service-api-hero.service';
+import { ServiceApiHeroService, CONSTS } from '../service-api-hero.service';
 import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
@@ -9,6 +9,10 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  // general
+  public url_app: String = CONSTS.url_app;
+
+  // app function
   twentyHeros: Hero[] = [];
   viewHero: Hero = {
     id: 0,
